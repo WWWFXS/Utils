@@ -1,0 +1,134 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=6548, tid=7900
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_25-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.25-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0108d000):  JavaThread "Unknown thread" [_thread_in_vm, id=7900, stack(0x01150000,0x011a0000)]
+
+Stack: [0x01150000,0x011a0000],  sp=0x0119f838,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x19796b]
+V  [jvm.dll+0x1908e6]
+V  [jvm.dll+0x3b4e9]
+V  [jvm.dll+0x3b69e]
+V  [jvm.dll+0x4a063]
+V  [jvm.dll+0x9dc8e]
+V  [jvm.dll+0x9df52]
+V  [jvm.dll+0x145a01]
+V  [jvm.dll+0x169ab8]
+V  [jvm.dll+0xdaea1]
+C  [javaw.exe+0x13e4]
+C  [javaw.exe+0x1eb7]
+C  [javaw.exe+0xaba1]
+C  [javaw.exe+0xac2b]
+C  [kernel32.dll+0x1338a]
+C  [ntdll.dll+0x39a02]
+C  [ntdll.dll+0x399d5]
+C  0x00000000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0108d000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7900, stack(0x01150000,0x011a0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.010 loading class java/lang/CharSequence done
+Event: 0.010 loading class java/lang/String done
+Event: 0.010 loading class java/lang/Class
+Event: 0.010 loading class java/lang/reflect/AnnotatedElement
+Event: 0.010 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.010 loading class java/lang/reflect/GenericDeclaration
+Event: 0.010 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.010 loading class java/lang/reflect/Type
+Event: 0.010 loading class java/lang/reflect/Type done
+Event: 0.010 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x01310000 - 0x01340000 	D:\android\adt-bundle-windows-x86-20140702\eclipse\jre\bin\javaw.exe
+0x770a0000 - 0x77220000 	C:\Windows\SysWOW64\ntdll.dll
+0x76200000 - 0x76310000 	C:\Windows\syswow64\kernel32.dll
+0x74990000 - 0x749d7000 	C:\Windows\syswow64\KERNELBASE.dll
+0x752c0000 - 0x75361000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76140000 - 0x761ec000 	C:\Windows\syswow64\msvcrt.dll
+0x74fe0000 - 0x74ff9000 	C:\Windows\SysWOW64\sechost.dll
+0x75370000 - 0x75460000 	C:\Windows\syswow64\RPCRT4.dll
+0x74750000 - 0x747b0000 	C:\Windows\syswow64\SspiCli.dll
+0x74740000 - 0x7474c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76580000 - 0x76680000 	C:\Windows\syswow64\USER32.dll
+0x75000000 - 0x75090000 	C:\Windows\syswow64\GDI32.dll
+0x74eb0000 - 0x74eba000 	C:\Windows\syswow64\LPK.dll
+0x74b20000 - 0x74bbd000 	C:\Windows\syswow64\USP10.dll
+0x72880000 - 0x72a1e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x749e0000 - 0x74a37000 	C:\Windows\syswow64\SHLWAPI.dll
+0x747b0000 - 0x74810000 	C:\Windows\system32\IMM32.DLL
+0x76310000 - 0x763dc000 	C:\Windows\syswow64\MSCTF.dll
+0x6f5e0000 - 0x6f69f000 	D:\android\adt-bundle-windows-x86-20140702\eclipse\jre\bin\msvcr100.dll
+0x6f990000 - 0x6fd34000 	D:\android\adt-bundle-windows-x86-20140702\eclipse\jre\bin\client\jvm.dll
+0x739f0000 - 0x739f7000 	C:\Windows\system32\WSOCK32.dll
+0x76540000 - 0x76575000 	C:\Windows\syswow64\WS2_32.dll
+0x74ea0000 - 0x74ea6000 	C:\Windows\syswow64\NSI.dll
+0x73520000 - 0x73552000 	C:\Windows\system32\WINMM.dll
+0x761f0000 - 0x761f5000 	C:\Windows\syswow64\PSAPI.DLL
+0x71320000 - 0x7132c000 	D:\android\adt-bundle-windows-x86-20140702\eclipse\jre\bin\verify.dll
+0x70470000 - 0x70491000 	D:\android\adt-bundle-windows-x86-20140702\eclipse\jre\bin\java.dll
+0x704b0000 - 0x704c3000 	D:\android\adt-bundle-windows-x86-20140702\eclipse\jre\bin\zip.dll
+0x73730000 - 0x7381b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\android\adt-bundle-windows-x86-20140702\sdk\platforms\android-23\android.jar 
+java_command: com.example.andutils.Test
+java_class_path (initial): F:\fxs\Utils\AndUtils\bin\classes;E:\fxsWorkplace\workplace\appcompat_v7\libs\android-support-v4.jar;E:\fxsWorkplace\workplace\appcompat_v7\libs\android-support-v7-appcompat.jar;E:\fxsWorkplace\workplace\appcompat_v7\bin\appcompat_v7.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Java\jdk1.8.0_51
+CLASSPATH=.;D:\Java\jdk1.8.0_51\lib;D:\Java\jdk1.8.0_51\lib\tools.jar
+PATH=D:/android/adt-bundle-windows-x86-20140702/eclipse/jre/bin/client;D:/android/adt-bundle-windows-x86-20140702/eclipse/jre/bin;D:/android/adt-bundle-windows-x86-20140702/eclipse/jre/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\android\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server;D:\Java\jdk1.8.0_51\bin;D:\Java\jdk1.8.0_51\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\android\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server;D:\Java\jdk1.8.0_51\bin;D:\Java\jdk1.8.0_51\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\android\adt-bundle-windows-x86-20140702\sdk\platform-tools;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server;D:\Java\jdk1.8.0_51\bin;D:\Java\jdk1.8.0_51\jre\bin;C:\Windows\System32;%GRADLE_HOME%\bin;%GRADLE_HOME%\bin;%GRADLE_HOME%\bin;D:\android\adt-bundle-windows-x86-20140702\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 8078752k(4687612k free), swap 16155668k(12585972k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.25-b02) for windows-x86 JRE (1.8.0_25-b18), built on Oct  7 2014 14:31:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Thu Aug 25 09:59:02 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
